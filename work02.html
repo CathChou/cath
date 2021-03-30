@@ -14,66 +14,81 @@
 <body>
 	<div id="wrap">
 		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
-			</button>
-			<span class="navbar-brand" href="#">: CATH CHOU :</span>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			</button>-->
+			<a class="navbar-brand" href="index.html">: CATH CHOU :</a>
+			<!--<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav menu">
 				  <li class="nav-item">
 				    <a class="nav-link" href="index.html">HOME</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="https://cathchou.updog.co/index.html#section1">ABOUT</a>
+				    <a class="nav-link" href="#section1">ABOUT</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" href="https://cathchou.updog.co/index.html#section2">WORK</a>
+				    <a class="nav-link" href="#section2">WORK</a>
 				  </li>
 				</ul>
-			</div>
+			</div>-->
 		</nav>
 		<div id="work02-head" class="center">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<p class="maintitle">TWININGS OF LONDON</p>
-						<p class="subtitle">英國唐寧茶</p>
+						<p class="maintitle animated fadeIn">ZYXEL CONSOLE</p>
+						<p class="subtitle animated fadeIn">合勤科技後台操作介面</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div id="work01-pic" class="col-12"><img src="images/work02_1.png" class="img-fluid"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xl-5 col-lg-5 col-md-4 col-sm-4 col-12 work02-intropic"><img src="images/work02_2.jpg" class="img-fluid"></div>
-			<div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 work02-introtxt">
-				<p class="sub">PROJECT</p>
-				<p><span>和客戶一起規劃品牌定位及執行，由我們建議官網的服務功能和架構，協助客戶管理會員名單和寄發EDM，配合客戶活動檔期定期設計及更新官網頁面。</span></p>
-				<p class="sub">ROLE</p>
-				<ul>
-					<li>活動頁面的設計和切版，及其他相關素材製作</li>
-					<li>與企劃及後端工程師，團體合作溝通及協調各項事宜</li>
-					<li>網站後續維護及更新</li>
-				</ul>
-				<a class="online" href="https://www.twinings.com.tw/index.php" target="blanc">VIEW ONLINE</a>
+				<div id="work01-pic" class="col-12 animated fadeIn"><img src="images/work02_1.png" class="img-fluid"></div>
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 work-introtxt">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<p class="sub">PROJECT</p>
+							<p><span>為開始接案後的第一項大型專案。由於後台的操作習慣和前台大不相同，此案的設計以資料整合，及方便使用為優先，如何讓user操作起來更加順手和節省掉不必要的流程反而是思考的重點。屬於功能性操作平台，視覺上使用沈穩的深色調能讓介面看起來更簡約及有系統性</span></p>
+							<!--<a class="online" href="https://www.grandmayfull.com/" target="blanc">VIEW ONLINE</a>-->
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<p class="sub">ROLE</p>
+							<p>
+								<ul>
+									<li>後台操作介面設計</li>
+									<li>與前端，後端工程師，及企劃單位合作溝通及協調各項事宜</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 work01-page"><img src="images/work02_3.jpg" class="img-fluid"></div>
-			</div>
-		</div>
-		<div class="work02-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 work02-page"><img src="images/work02_4.jpg" class="img-fluid"></div>
-				</div>
+				<div class="col-12 work-page animated animation"><img src="images/work02_2.jpg" class="img-fluid"></div>
+				<div class="col-12 work-page animated animation"><img src="images/work02_3.jpg" class="img-fluid"></div>
+				<div class="col-12 work-page animated animation"><img src="images/work02_4.jpg" class="img-fluid"></div>
 			</div>
 		</div>
 	</div>	
+<script>
+	$(window).scroll(function() {
+		$('.animation').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown2");
+			}
+			var ww = $(window).width();
+			if (ww < 769) {
+		    $(this).removeClass("fadeIndown2");
+		    }
+		});
+	});
+</script>
 </body>
 </html>
 
