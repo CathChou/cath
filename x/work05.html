@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>：Cath Chou：</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>       
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<!--<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>-->
+			<a class="navbar-brand" href="index.html">: CATH CHOU :</a>
+			<!--<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav menu">
+				  <li class="nav-item">
+				    <a class="nav-link" href="index.html">HOME</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#section1">ABOUT</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#section2">WORK</a>
+				  </li>
+				</ul>
+			</div>-->
+		</nav>
+		<div id="work05-head" class="center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="maintitle animated fadeIn">LINE</p>
+						<p class="subtitle animated fadeIn">話題卡素材設計</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 work-introtxt">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<p class="sub">PROJECT</p>
+							<p><span>LINE推出的話題卡，希望設計出來的視覺能引導消費者上傳相同主題的照片做分享。此專案做起來很有趣，設計被賦予很大的製作空間，拿到企劃提出的主題後，可以自由發揮不限風格，只要能做出有質感又符合主題的設計即可</span></p>
+							<!--<a class="online" href="https://www.grandmayfull.com/" target="blanc">VIEW ONLINE</a>-->
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+							<p class="sub">ROLE</p>
+							<p>
+								<ul>
+									<li>BANNER視覺設計</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row work-page animated fadeIn">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line01.jpg" class="img-fluid"></div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line02.jpg" class="img-fluid"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row work-page animated animation">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line03.jpg" class="img-fluid"></div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line04.jpg" class="img-fluid"></div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row work-page animated animation">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line05.jpg" class="img-fluid"></div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line06.jpg" class="img-fluid"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row work-page animated animation">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line07.jpg" class="img-fluid"></div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 m-20"><img src="images/line08.jpg" class="img-fluid"></div>
+			</div>
+		</div>
+	</div>	
+<script>
+	$(window).scroll(function() {
+		$('.animation').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+750) {
+			$(this).addClass("fadeIndown2");
+			}
+			var ww = $(window).width();
+			if (ww < 769) {
+		    $(this).removeClass("fadeIndown2");
+		    }
+		});
+	});
+</script>
+</body>
+</html>
+

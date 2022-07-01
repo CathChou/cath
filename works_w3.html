@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>：Cath Chou：</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<a class="logo" href="index.html">
+				<img src="images/logo.svg">
+				<p>CATH CHOU</p>
+			</a>
+			<nav class="nav">
+			  <button class="toggle-menu"><span></span></button>
+			</nav>
+		</header>
+		<div id="menu" class="">
+			<nav class="main-nav">
+			  <ul>
+				<li><a href="#">About</a></li>
+				<li><a href="works.html">Works</a></li>
+				<li><a id="bt_contact">Contact</a></li>
+			  </ul>
+			</nav>
+		</div>
+		<div id="back-top">
+			<a href="#top">
+				<div class="tri"></div>
+				<div class="top"><img src="images/arrow_top.png"></div>
+			</a>
+		</div>
+
+		<div class="works_float">
+			<span class="icon_pig"><img src="images/icon_hole.png"></span>
+			EverFun Holiday
+		</div>
+		
+		<div class="works">
+			<div data-stellar-ratio="0.5" class="worksround_1"><img src="images/round_1.png"></div>
+			<div data-stellar-ratio="1.5" class="worksround_2"><img src="images/about_round_1.png"></div>
+			<div data-stellar-ratio="0.5" class="worksround_3"><img src="images/about_round_2.png"></div>
+			<div data-stellar-ratio="0.5" class="worksround_4"><img src="images/about_round_3.png"></div>
+			<div class="worksround_5"><img src="images/round_2.png"></div>
+			<div class="worksround_6"><img src="images/round_3.png"></div>
+			<div class="works_kv"><img src="images/w3_kv.jpg"></div>
+			<div class="container">
+				<div class="works_pc"><img src="images/w3_pc.png"></div>
+				<div class="works_intro">
+					<dl>
+						<dt>Brand</dt>
+						<dd>長汎假期_長榮航空直營旅行社</dd>
+						<div class="clear"></div>
+					</dl>
+					<dl>
+						<dt>Project</dt>
+						<dd>為因應行動裝置的普及，於2019年進行改版，全面將網站改為RWD響應式網站。視覺以企業綠色延伸，搭配多彩豐富的配色與留白的空間製造明亮感，營造旅行社有趣又活潑的形象。</dd>
+						<div class="clear"></div>
+					</dl>
+					<dl>
+						<dt>Role</dt>
+						<dd>：響應式網站視覺改版設計<br />：與前端，及企劃單位合作溝通及協調各項事宜</dd>
+						<div class="clear"></div>
+					</dl>
+					<dl>
+						<dt>Url</dt>
+						<dd>https://www.everfuntravel.com/</dd>
+						<div class="clear"></div>
+					</dl>
+				</div>
+				<div class="works_mobile">
+					<div class="phone"><img src="images/w3_m1.png"></div>
+					<div class="phone"><img src="images/w3_m2.png"></div>
+				</div>
+				<div><img src="images/w3_01.jpg"></div>
+				<div class="m-top100"><img src="images/w3_02.jpg"></div>
+				<div class="m-top100"><img src="images/w3_03.jpg"></div>
+				<div class="m-top100"><img src="images/w3_04.jpg"></div>
+				<a href="works.html" class="btn_works2 animated UpDown"></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		
+
+		
+	</div>
+	<script src="js/jquery-2.0.2.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/action.js"></script>
+	<script>
+		$(window).scroll(function() {
+			$('.intro_t, .skill, .indexw_content, .title, .contact_content').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop() + $(window).height() * 0.8
+				if (imagePos < topOfWindow) {
+				$(this).addClass("fadeIndown");
+				}
+				
+			});
+		});
+		$(document).ready(function () {
+			$.stellar({
+			horizontalScrolling:false,
+			responsive: true,
+			hideDistantElements:false
+			});
+		});
+	</script>
+</body>
+</html>
+
