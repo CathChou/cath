@@ -272,7 +272,7 @@ span.line{ height: 1px; width: 100%; display: inline-block; background:#454545; 
 }
 
 @media screen and (max-width: 1023px){
-.contact_round_1, .contact_round_2, .contact_round_3, .works_float{ display: none;}
+.contact_round_1, .contact_round_2, .contact_round_3, .works_float, .w3_deco, .e5_deco, .e6_deco{ display: none;}
 .kv{ height: 434px;}
 .kv .cath{ width: 654px;}
 #header{ padding: 20px 20px 0;}
