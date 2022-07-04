@@ -189,7 +189,7 @@ span.line{ height: 1px; width: 100%; display: inline-block; background:#454545; 
 .worksround_2{ position: absolute; top: 580px; right: 0;}
 .worksround_3{ position: absolute; top: 1060px; left: 0;}
 .worksround_4{ position: absolute; top: 1350px; left: 0;}
-.worksround_5{ position: absolute; bottom: 740px; right: 0;}
+.worksround_5{ position: absolute; bottom: 740px; right: 0; width: 240px;}
 .worksround_6{ position: absolute; bottom: 0; left: 0;}
 .works{ position: relative; padding: 120px 0;}
 .tab_contain{ display:flex; flex-direction: column; align-items: center; padding-top: 40px; position: relative; z-index: 1;}
@@ -221,8 +221,13 @@ span.line{ height: 1px; width: 100%; display: inline-block; background:#454545; 
 .works_kv{ width: 1400px; margin: 0 auto; position: relative; margin-bottom: 100px; z-index: 2;}
 .works_pc{ width: 1050px; margin: 0 auto;}
 .works_mobile{ background: #f7f7f7; display: flex; padding: 80px 0; justify-content: center;}
+.works_mobile_e5{background: #fff8ee;}
 .works_mobile .phone{ margin: 0 60px;}
-.works_intro{ padding: 100px 115px;}
+.works_intro{ padding: 100px 115px; position: relative;}
+.w3_deco, .e5_deco, .e6_deco{ position: absolute; right: 0; bottom: 0;}
+.w3_deco{ width: 109px;}
+.e5_deco{ width: 213px;}
+.e6_deco{ width: 209px;}
 .works_intro dl{ width: 100%; margin: 30px 0;}
 .works_intro dl dt{ font-size: 1.5rem; font-weight: bold; width: 150px; display: inline-block; float: left; font-family: Helvetica-Bold;}
 .works_intro dl dd{ display: inline-block; float: left; width: 75%;}
@@ -263,6 +268,7 @@ span.line{ height: 1px; width: 100%; display: inline-block; background:#454545; 
 .worksround_5{ width: 180px;}
 .worksround_6{ width: 300px;}
 .works_pc, .works_mobile, .works_img{ width: 80%;}
+.w3_deco, .e5_deco, .e6_deco{ right: -140px;}
 }
 
 @media screen and (max-width: 1023px){
