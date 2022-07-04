@@ -314,7 +314,6 @@ span.line{ margin-top: 20px;}
 
 
 @media (max-width: 767px){
-.intro_t, .skill, .indexw_content, .title, .contact_content, .works_kv, .tab_contain, .works_pc, .works_intro, .works_mobile, .works_img{ visibility: visible;}
 h2{ font-size: 2.5rem;}
 .title{ margin-bottom: 40px;}
 .about_round_1, .about_round_2, .about_round_3, .worksround_2, .worksround_3, .worksround_4, .worksround_5, .works_float{ display: none !important;}
