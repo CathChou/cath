@@ -223,6 +223,10 @@
 				if (imagePos < topOfWindow) {
 				$(this).addClass("fadeIndown");
 				}
+				var ww = $(window).width();
+				if (ww < 769) {
+				$(this).removeClass("fadeIndown");
+				}
 				
 			});
 		});
