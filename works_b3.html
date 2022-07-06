@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:title" content="：Cath Chou：a web designer based in TAIPEI">
+<meta property="og:image" content="images/fb.jpg">
+<title>：Cath Chou：a web designer based in TAIPEI</title>
+<link rel="image_src" href="images/fb.jpg">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<a class="logo" href="index.html">
+				<img src="images/logo.svg">
+				<p>CATH CHOU</p>
+			</a>
+			<nav class="nav">
+			  <button class="toggle-menu"><span></span></button>
+			</nav>
+		</header>
+		<div id="menu" class="">
+			<nav class="main-nav">
+			  <ul>
+				<!--<li><a href="#">About</a></li>-->
+				<li><a href="works.html">Works</a></li>
+				<li><a id="bt_contact">Contact</a></li>
+			  </ul>
+			</nav>
+		</div>
+		<div id="back-top">
+			<a href="#top">
+				<div class="tri"></div>
+				<div class="top"><img src="images/arrow_top.png"></div>
+			</a>
+		</div>
+
+		<div class="works_float">
+			<span class="icon_pig"><img src="images/icon_hole.png"></span>
+			ReFa
+		</div>
+		
+		<div class="works">
+			<div data-stellar-ratio="0.5" class="worksround_1"><img src="images/round_1.png"></div>
+			<div data-stellar-ratio="1.5" class="worksround_2"><img src="images/about_round_1.png"></div>
+			<div data-stellar-ratio="0.5" class="worksround_3"><img src="images/about_round_2.png"></div>
+			<div data-stellar-ratio="0.5" class="worksround_4"><img src="images/about_round_3.png"></div>
+			<div class="worksround_5"><img src="images/round_2.png"></div>
+			<div class="worksround_6"><img src="images/round_3.png"></div>
+			<div class="works_kv animated fadeIndown"><img src="images/b3_kv.jpg"></div>
+			<div class="container">
+				<div class="works_intro animated">
+					<dl>
+						<dt>Brand</dt>
+						<dd>ReFa</dd>
+						<div class="clear"></div>
+					</dl>
+					<dl>
+						<dt>Project</dt>
+						<dd>為因應行動裝置的普及，於2019年進行改版，全面將網站改為RWD響應式網站。視覺以企業綠色延伸，搭配多彩豐富的配色與留白的空間製造明亮感，營造旅行社有趣又活潑的形象。</dd>
+						<div class="clear"></div>
+					</dl>
+					<dl>
+						<dt>Role</dt>
+						<dd>：響應式網站視覺改版設計<br />：與前端，及企劃單位合作溝通及協調各項事宜</dd>
+						<div class="clear"></div>
+					</dl>
+				</div>
+				<div class="banner_content_3">
+					<div class="banner_box_3 animated"><img src="images/refa01.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa02.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa03.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa04.jpg"></div>
+				</div>
+
+				<div class="banner_content_3">
+					<div class="banner_box_3 animated"><img src="images/refa05.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa06.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa07.jpg"></div>
+				</div>
+
+				<div class="banner_content_3">
+					<div class="banner_box_3 animated"><img src="images/refa08.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa09.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa10.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa11.jpg"></div>
+					<div class="banner_box_3 animated"><img src="images/refa12.jpg"></div>
+				</div>
+				
+				
+				<a href="works.html" class="btn_works2 animated UpDown"></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		
+
+		
+	</div>
+	<script src="js/jquery-2.0.2.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/action.js"></script>
+	<script>
+		$(window).scroll(function() {
+			$('.works_intro, .works_mobile, .works_img').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop() + $(window).height() * 0.8
+				if (imagePos < topOfWindow) {
+				$(this).addClass("fadeIndown");
+				}
+
+			});
+		});
+		$(document).ready(function () {
+			$.stellar({
+			horizontalScrolling:false,
+			responsive: true,
+			hideDistantElements:false
+			});
+		});
+	</script>
+</body>
+</html>
+
